@@ -1,0 +1,221 @@
+{
+  "id": 183,
+  "firstname": "Mykhailo",
+  "lastname": "Oliyarnyk",
+  "birthDate": "1987-11-05",
+  "phoneOne": "097 336 12 61",
+  "phoneTwo": null,
+  "skype": "misha.oliyarnyk",
+  "email": "misha.oliyarnyk@gmail.com",
+  "corporateEmail": "mykhaylo.oliyarnyk@sombrainc.com",
+  "level": "Senior",
+  "position": "Software Engineer",
+  "startsWork": "2018-07-30",
+  "avatar": "d286e6c36b8e158b79fcaaec99edf09f",
+  "base64Avatar": null,
+  "lastLogin": "2021-09-28T20:33:28.000",
+  "messages": null,
+  "allProjectManagers": null,
+  "mentor": {
+    "id": 26,
+    "firstname": "Yurii",
+    "lastname": "Nakonechnyi",
+    "birthDate": "1988-01-24",
+    "phoneOne": "097 788 61 58",
+    "phoneTwo": null,
+    "skype": "skype_yura",
+    "email": "yura.nakonechnyi@gmail.com",
+    "corporateEmail": "yuriy@sombrainc.com",
+    "level": null,
+    "position": "CTO",
+    "startsWork": "2014-10-20",
+    "avatar": "bf1fb5a6d5c10dea965335c60dbd6a40",
+    "base64Avatar": null,
+    "lastLogin": "2021-09-27T14:25:26.000",
+    "messages": null,
+    "allProjectManagers": null,
+    "mentor": null,
+    "mainManager": null,
+    "myHR": null,
+    "teamLeadOfProjects": null,
+    "department": "Administration",
+    "office": "LVIV",
+    "allDepartments": null,
+    "languages": [
+      {
+        "id": 2173,
+        "userId": 26,
+        "language": {
+          "id": 1,
+          "name": "English"
+        },
+        "level": {
+          "id": 9,
+          "level": "B2",
+          "name": "Upper-Intermediate High",
+          "description": "You can communicate with ease and can discuss any time frame. While you can often discuss things as well as superior learners, there are some topics you can’t discuss.You often still have grammar and vocabulary limitations but are usually skilled at compensating for these issues.",
+          "sequenceNumber": 9
+        },
+        "nextLevel": {
+          "id": 10,
+          "level": "C1",
+          "name": "Advanced",
+          "description": "You can cormmuricate accru'ately. A few sporadic errors may still occru’, but the overall meaning remains clear. You can speak or write comfortably on a wide variety of topics.",
+          "sequenceNumber": 10
+        },
+        "lastReview": "2021-09-27"
+      }
+    ],
+    "comment": null,
+    "location": null,
+    "officeLead": false,
+    "technicalLead": false,
+    "topManager": false
+  },
+  "mainManager": {
+    "id": 430,
+    "firstname": "Yurii",
+    "lastname": "Golovchak",
+    "birthDate": "1982-02-23",
+    "phoneOne": "0996284580",
+    "phoneTwo": null,
+    "skype": "yuriy.golovchak",
+    "email": "zloddah@gmail.com",
+    "corporateEmail": "yuriy.golovchak@sombrainc.com",
+    "level": "Junior",
+    "position": "Project Manager",
+    "startsWork": "2021-04-29",
+    "avatar": "f3d898d0-422b-4025-a859-75208c161784",
+    "base64Avatar": null,
+    "lastLogin": "2021-09-28T17:56:29.000",
+    "messages": null,
+    "allProjectManagers": null,
+    "mentor": null,
+    "mainManager": null,
+    "myHR": null,
+    "teamLeadOfProjects": null,
+    "department": "Delivery",
+    "office": "IF",
+    "allDepartments": null,
+    "languages": [
+      {
+        "id": 2313,
+        "userId": 430,
+        "language": {
+          "id": 1,
+          "name": "English"
+        },
+        "level": {
+          "id": 5,
+          "level": "B1",
+          "name": "Intermediate",
+          "description": "You can speak and understand reasonably well and can use basic tenses but have problems with more complex grammar and vocabulary. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can communicate about routine, common topics.",
+          "sequenceNumber": 5
+        },
+        "nextLevel": {
+          "id": 6,
+          "level": "B1",
+          "name": "Intermediate High",
+          "description": "You can handle simple, straightforward communication. You do best with very predictable conversations and contexts and may struggle with topics that are less familiar. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can cormnurricate about routine, cormnon topics. You can occasionally handle advanced tasks. You can comrmuricate without much difficulty but still make quite a lot of mistakes and misunderstand sometimes.",
+          "sequenceNumber": 6
+        },
+        "lastReview": "2021-09-27"
+      }
+    ],
+    "comment": null,
+    "location": null,
+    "officeLead": false,
+    "technicalLead": false,
+    "topManager": false
+  },
+  "myHR": {
+    "id": 108,
+    "firstname": "Nataliia",
+    "lastname": "Shulzhenko",
+    "birthDate": "1992-03-08",
+    "phoneOne": "0967432749",
+    "phoneTwo": null,
+    "skype": "natalia.shulzhenko",
+    "email": "992nalalya@gmail.com",
+    "corporateEmail": "natalia.shulzhenko@sombrainc.com",
+    "level": null,
+    "position": "HR Manager",
+    "startsWork": "2017-07-27",
+    "avatar": "61a64fab920409c413d0f9d6a8d09ef6",
+    "base64Avatar": null,
+    "lastLogin": "2021-09-28T18:04:16.000",
+    "messages": null,
+    "allProjectManagers": null,
+    "mentor": null,
+    "mainManager": null,
+    "myHR": null,
+    "teamLeadOfProjects": null,
+    "department": "HR Department",
+    "office": "LVIV",
+    "allDepartments": null,
+    "languages": [
+      {
+        "id": 2198,
+        "userId": 108,
+        "language": {
+          "id": 1,
+          "name": "English"
+        },
+        "level": {
+          "id": 5,
+          "level": "B1",
+          "name": "Intermediate",
+          "description": "You can speak and understand reasonably well and can use basic tenses but have problems with more complex grammar and vocabulary. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can communicate about routine, common topics.",
+          "sequenceNumber": 5
+        },
+        "nextLevel": {
+          "id": 6,
+          "level": "B1",
+          "name": "Intermediate High",
+          "description": "You can handle simple, straightforward communication. You do best with very predictable conversations and contexts and may struggle with topics that are less familiar. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can cormnurricate about routine, cormnon topics. You can occasionally handle advanced tasks. You can comrmuricate without much difficulty but still make quite a lot of mistakes and misunderstand sometimes.",
+          "sequenceNumber": 6
+        },
+        "lastReview": "2021-09-27"
+      }
+    ],
+    "comment": null,
+    "location": null,
+    "officeLead": false,
+    "technicalLead": false,
+    "topManager": false
+  },
+  "teamLeadOfProjects": null,
+  "department": "Delivery",
+  "office": "LVIV",
+  "allDepartments": null,
+  "languages": [
+    {
+      "id": 2219,
+      "userId": 183,
+      "language": {
+        "id": 1,
+        "name": "English"
+      },
+      "level": {
+        "id": 3,
+        "level": "A2",
+        "name": "Pre-Intermediate",
+        "description": "You can communicate simply and understand in familiar situations but only with some difficulty.",
+        "sequenceNumber": 3
+      },
+      "nextLevel": {
+        "id": 4,
+        "level": "B1",
+        "name": "Intermediate Low",
+        "description": "At this level, you can communicate in a limited number of straightforward situations. You can share personal information, order food and communicate other basic survival information. You can make simple sentences and can understand the main points of a conversation but need much more vocabulaerour responses often show hesitation. When speaking, there will be frequent misunderstandings.",
+        "sequenceNumber": 4
+      },
+      "lastReview": "2021-09-27"
+    }
+  ],
+  "comment": null,
+  "location": null,
+  "officeLead": false,
+  "technicalLead": false,
+  "topManager": false
+}

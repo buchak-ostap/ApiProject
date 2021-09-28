@@ -1,0 +1,166 @@
+{
+  "id": 182,
+  "firstname": "Ostap",
+  "lastname": "Buchak",
+  "birthDate": "1997-10-20",
+  "phoneOne": "097 557 45 65",
+  "phoneTwo": null,
+  "skype": "live:1f95fa880e1b43a",
+  "email": "obuchak1997@gmail.com",
+  "corporateEmail": "ostap.buchak@sombrainc.com",
+  "level": "Middle",
+  "position": "Software Engineer",
+  "startsWork": "2018-07-26",
+  "avatar": "b8ebbc76cc1734a550b38eff08e1d7a9",
+  "base64Avatar": null,
+  "lastLogin": "2021-09-27T22:45:50.000",
+  "messages": null,
+  "allProjectManagers": null,
+  "mentor": null,
+  "mainManager": {
+    "id": 213,
+    "firstname": "Inna",
+    "lastname": "Demchuk",
+    "birthDate": "1991-05-14",
+    "phoneOne": "093 655 53 17",
+    "phoneTwo": null,
+    "skype": "inna.demchuk_eleks",
+    "email": "dinna8060@gmail.com",
+    "corporateEmail": "inna.demchuk@sombrainc.com",
+    "level": "Middle",
+    "position": "Project Manager",
+    "startsWork": "2019-05-27",
+    "avatar": "18be3fbf-9305-40e5-86b3-6afa66915314",
+    "base64Avatar": null,
+    "lastLogin": "2021-09-27T12:06:20.000",
+    "messages": null,
+    "allProjectManagers": null,
+    "mentor": null,
+    "mainManager": null,
+    "myHR": null,
+    "teamLeadOfProjects": null,
+    "department": "Delivery",
+    "office": "LVIV",
+    "allDepartments": null,
+    "languages": [
+      {
+        "id": 2229,
+        "userId": 213,
+        "language": {
+          "id": 1,
+          "name": "English"
+        },
+        "level": {
+          "id": 7,
+          "level": "B2",
+          "name": "Upper-Intermediate Low",
+          "description": "You can discuss all time frames. However, your responses are usually limited to a paragraph. You have several grarmnatical issues but can usually communicate with native speakers (albeit with some difficulty).",
+          "sequenceNumber": 7
+        },
+        "nextLevel": {
+          "id": 8,
+          "level": "B2",
+          "name": "Upper-Intermediate",
+          "description": "At this level, you can conmrunicate with ease and flow. While your vocabulary is usually limited to generic terms, it’s relatively substantial.",
+          "sequenceNumber": 8
+        },
+        "lastReview": "2021-09-27"
+      }
+    ],
+    "comment": null,
+    "location": null,
+    "officeLead": false,
+    "technicalLead": false,
+    "topManager": false
+  },
+  "myHR": {
+    "id": 108,
+    "firstname": "Nataliia",
+    "lastname": "Shulzhenko",
+    "birthDate": "1992-03-08",
+    "phoneOne": "0967432749",
+    "phoneTwo": null,
+    "skype": "natalia.shulzhenko",
+    "email": "992nalalya@gmail.com",
+    "corporateEmail": "natalia.shulzhenko@sombrainc.com",
+    "level": null,
+    "position": "HR Manager",
+    "startsWork": "2017-07-27",
+    "avatar": "61a64fab920409c413d0f9d6a8d09ef6",
+    "base64Avatar": null,
+    "lastLogin": "2021-09-27T11:08:18.000",
+    "messages": null,
+    "allProjectManagers": null,
+    "mentor": null,
+    "mainManager": null,
+    "myHR": null,
+    "teamLeadOfProjects": null,
+    "department": "HR Department",
+    "office": "LVIV",
+    "allDepartments": null,
+    "languages": [
+      {
+        "id": 2198,
+        "userId": 108,
+        "language": {
+          "id": 1,
+          "name": "English"
+        },
+        "level": {
+          "id": 5,
+          "level": "B1",
+          "name": "Intermediate",
+          "description": "You can speak and understand reasonably well and can use basic tenses but have problems with more complex grammar and vocabulary. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can communicate about routine, common topics.",
+          "sequenceNumber": 5
+        },
+        "nextLevel": {
+          "id": 6,
+          "level": "B1",
+          "name": "Intermediate High",
+          "description": "You can handle simple, straightforward communication. You do best with very predictable conversations and contexts and may struggle with topics that are less familiar. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can cormnurricate about routine, cormnon topics. You can occasionally handle advanced tasks. You can comrmuricate without much difficulty but still make quite a lot of mistakes and misunderstand sometimes.",
+          "sequenceNumber": 6
+        },
+        "lastReview": "2021-09-27"
+      }
+    ],
+    "comment": null,
+    "location": null,
+    "officeLead": false,
+    "technicalLead": false,
+    "topManager": false
+  },
+  "teamLeadOfProjects": null,
+  "department": "Delivery",
+  "office": "LVIV",
+  "allDepartments": null,
+  "languages": [
+    {
+      "id": 2218,
+      "userId": 182,
+      "language": {
+        "id": 1,
+        "name": "English"
+      },
+      "level": {
+        "id": 6,
+        "level": "B1",
+        "name": "Intermediate High",
+        "description": "You can handle simple, straightforward communication. You do best with very predictable conversations and contexts and may struggle with topics that are less familiar. At this level, you can also combine words and phrases to form meaning rather than relying on memorized scripts. You can cormnurricate about routine, cormnon topics. You can occasionally handle advanced tasks. You can comrmuricate without much difficulty but still make quite a lot of mistakes and misunderstand sometimes.",
+        "sequenceNumber": 6
+      },
+      "nextLevel": {
+        "id": 7,
+        "level": "B2",
+        "name": "Upper-Intermediate Low",
+        "description": "You can discuss all time frames. However, your responses are usually limited to a paragraph. You have several grarmnatical issues but can usually communicate with native speakers (albeit with some difficulty).",
+        "sequenceNumber": 7
+      },
+      "lastReview": "2021-09-27"
+    }
+  ],
+  "comment": null,
+  "location": null,
+  "officeLead": false,
+  "technicalLead": false,
+  "topManager": false
+}

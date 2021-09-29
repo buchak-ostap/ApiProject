@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CreateTimeLogDto {
 
-    private int id;
+    private Integer id;
     private int timeSpent;
     private int minutes;
     private int hours;

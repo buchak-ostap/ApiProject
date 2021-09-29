@@ -8,6 +8,7 @@ import com.apiProject.util.json.JacksonUtil;
 import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 
+import static com.apiProject.util.DateConstants.getLocalDate;
 import static org.springframework.http.HttpStatus.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -18,8 +19,13 @@ public class TimeLogCreateTest extends BaseTest {
 
     @Test
     public void createNewTimeLog() {
-        final String requestBody = FileUtils.getTextFromResourceFile(TIME_LOG_PATH);
-        CreateTimeLogDto expected = JacksonUtil.deserializeWithDate(requestBody, CreateTimeLogDto.class);
+        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH);
+        final CreateTimeLogDto requestBody = JacksonUtil.deserializeWithDate(requestBodyJson, CreateTimeLogDto.class);
+        CreateTimeLogDto expected = JacksonUtil.deserializeWithDate(requestBodyJson, CreateTimeLogDto.class);
+
+        //Change Date Calendar to current date
+        expected.setDateCalendar(getLocalDate());
+        requestBody.setDateCalendar(getLocalDate());
 
         String response = createTimeLog(requestBody, CREATED.value());
         CreateTimeLogDto actual = JacksonUtil.deserializeWithDate(response, CreateTimeLogDto.class);

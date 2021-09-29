@@ -1,5 +1,6 @@
-package com.apiProject;
+package com.apiProject.tests;
 
+import com.apiProject.BaseTest;
 import com.apiProject.model.contacts.ProfileDto;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
@@ -7,7 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TestApi extends BaseTest {
+import static org.springframework.http.HttpStatus.OK;
+
+public class ContactProfileTests extends BaseTest {
 
     public static final String CONTACT_PROFILE_USERS_PATH = "/testData/jsons/contactProfile/";
 
@@ -23,7 +26,7 @@ public class TestApi extends BaseTest {
         final String name = FileUtils.getTextFromResourceFile(CONTACT_PROFILE_USERS_PATH + expectedJson);
         ProfileDto expected = JacksonUtil.deserialize(name, ProfileDto.class);
 
-        String response = getProfile(id);
+        String response = getProfile(id, OK.value());
         ProfileDto actual = JacksonUtil.deserialize(response, ProfileDto.class);
         Assert.assertEquals(actual, expected);
     }

@@ -5,6 +5,11 @@ public interface ApplicationConstants {
     String SS_BASE_URL = "https://space.sombrainc.com/";
     String LOGIN_ENDPOINT = "api/authentication";
     String USER_PROFILE = "api/contacts/";
+    String CREATE_TIME_LOG = "api/timeLog";
+    String DELETE_TIME_LOG = "api/timeLog/";
+
+    //Messages
+    String TIME_LOG_SUCCESSFUL_DELETE_MESSAGE = "The time log was successfully deleted.";
 
     //Login constants
     String J_USERNAME = "j_username";

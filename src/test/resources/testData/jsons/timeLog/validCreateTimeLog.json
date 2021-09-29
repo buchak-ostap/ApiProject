@@ -1,0 +1,14 @@
+{
+  "id": null,
+  "timeSpent": 480,
+  "minutes": 0,
+  "hours": 8,
+  "projectId": 205,
+  "description": "Work on PHN projects, test finished tickets, create automation tests",
+  "inSeconds": 28800,
+  "dateCalendar": "2021-09-27",
+  "zoneOffset": 180,
+  "createdByEmail": "ostap.buchak@sombrainc.com",
+  "timeLogType": "works at project",
+  "dateCreate": null
+}

@@ -4,11 +4,10 @@ import com.apiProject.config.ApplicationConstants;
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.springframework.http.HttpStatus;
-import org.testng.Assert;
 
 import static com.apiProject.config.SessionProvider.getSessionToken;
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
 
 public class CRUD implements ApplicationConstants {
 
@@ -21,7 +20,22 @@ public class CRUD implements ApplicationConstants {
                 .get(USER_PROFILE + id)
                 .then()
                 .extract().response();
-        Assert.assertEquals(response.getStatusCode(), statusCode);
+        assertEquals(response.getStatusCode(), statusCode);
+        return response.body().asString();
+    }
+
+    @Step
+    public String getTimeLogMonth(int month, int year, int statusCode) {
+        Response response = given()
+                .header(COOKIE, getSessionToken(OSTAP_EMAIL, OSTAP_PASSWORD))
+                .contentType(ContentType.JSON)
+                .when()
+                .queryParam(MONTH, month)
+                .queryParam(YEAR, year)
+                .get(TIME_LOG_MONTH)
+                .then()
+                .extract().response();
+        assertEquals(response.getStatusCode(), statusCode);
         return response.body().asString();
     }
 
@@ -36,7 +50,7 @@ public class CRUD implements ApplicationConstants {
                 .post(CREATE_TIME_LOG)
                 .then()
                 .extract().response();
-        Assert.assertEquals(response.getStatusCode(), statusCode);
+        assertEquals(response.getStatusCode(), statusCode);
         return response.body().asString();
     }
 
@@ -48,7 +62,7 @@ public class CRUD implements ApplicationConstants {
                 .delete(DELETE_TIME_LOG + id)
                 .then()
                 .extract().response();
-        Assert.assertEquals(response.getStatusCode(), statusCode);
+        assertEquals(response.getStatusCode(), statusCode);
         return response.body().asString();
     }
 }

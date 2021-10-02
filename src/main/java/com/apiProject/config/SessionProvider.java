@@ -19,7 +19,7 @@ public class SessionProvider implements ApplicationConstants{
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         HttpEntity<MultiValueMap<String, String>> httpEntity = new HttpEntity<>(getParams(email, password), headers);
-        ResponseEntity<String> response = restTemplate.exchange(SS_BASE_URL + LOGIN_ENDPOINT, POST, httpEntity, String.class);
+        ResponseEntity<String> response = restTemplate.exchange(SS_BASE_URL + LOGIN_ENDPOINT_ENDPOINT, POST, httpEntity, String.class);
 
         List<String> map = response.getHeaders().get(HttpHeaders.SET_COOKIE);
         try {

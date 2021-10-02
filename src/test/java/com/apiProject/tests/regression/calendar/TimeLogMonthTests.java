@@ -1,4 +1,4 @@
-package com.apiProject.tests.calendar;
+package com.apiProject.tests.regression.calendar;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.TimeLogMonth;

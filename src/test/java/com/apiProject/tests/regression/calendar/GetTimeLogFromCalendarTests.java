@@ -1,4 +1,4 @@
-package com.apiProject.tests.calendar;
+package com.apiProject.tests.regression.calendar;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.CreateTimeLogDto;
@@ -19,12 +19,10 @@ import static org.springframework.http.HttpStatus.OK;
 
 public class GetTimeLogFromCalendarTests extends BaseTest {
 
-    public static final String TIME_LOG_PATH = "/testData/jsons/timeLog/validCreateTimeLog.json";
-
     @Test
     public void getTimeLogFromCalendarTest() {
         //Get request body to create Time Log
-        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH);
+        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
         final CreateTimeLogDto requestBody = JacksonUtil.deserializeWithDate(requestBodyJson, CreateTimeLogDto.class);
 
         //Create new Time Log

@@ -1,0 +1,165 @@
+{
+  "projectFolders": [],
+  "projects": [
+    {
+      "id": 205,
+      "title": "My Advisor ",
+      "manager": {
+        "id": 213,
+        "userId": null,
+        "projectId": null,
+        "fullName": "Inna Demchuk",
+        "email": "inna.demchuk@sombrainc.com",
+        "roles": [
+          {
+            "id": 6,
+            "roleType": "ROLE_PM"
+          },
+          {
+            "id": 9,
+            "roleType": "ROLE_USER"
+          }
+        ],
+        "activatedOnProject": null,
+        "activated": true,
+        "billable": null,
+        "avatar": "18be3fbf-9305-40e5-86b3-6afa66915314",
+        "department": "Delivery",
+        "startDate": null,
+        "endDate": null,
+        "teamMemberRates": null,
+        "enableEndDate": null,
+        "requiredStack": null,
+        "position": {
+          "positionType": "Project Manager",
+          "positionLevel": "Middle"
+        },
+        "stackList": [],
+        "fromUnknown": false
+      },
+      "hrManager": null,
+      "activated": true,
+      "team": null,
+      "createdAt": null,
+      "startDate": null,
+      "endDate": null,
+      "color": null,
+      "logo": null,
+      "base64Logo": null,
+      "shortName": null,
+      "projectTypeId": null,
+      "temporary": false,
+      "parentProjectFolder": null,
+      "technologies": null,
+      "client": null,
+      "description": null,
+      "accountDTO": null,
+      "teamLead": null,
+      "department": null,
+      "confluenceGroup": null,
+      "currentProjectTypeService": null,
+      "currentTypeOfAgreement": null,
+      "projectCountry": null,
+      "projectCurrency": null,
+      "ragStatus": null,
+      "accountOwner": null,
+      "documentLinks": null,
+      "projectCost": null,
+      "monthlyCosts": null,
+      "creationSource": null,
+      "projectAccount": null
+    },
+    {
+      "id": 178,
+      "title": "Pool",
+      "manager": {
+        "id": 108,
+        "userId": null,
+        "projectId": null,
+        "fullName": "Nataliia Shulzhenko",
+        "email": "natalia.shulzhenko@sombrainc.com",
+        "roles": [
+          {
+            "id": 9,
+            "roleType": "ROLE_USER"
+          },
+          {
+            "id": 17,
+            "roleType": "ROLE_NEWS_MANAGER"
+          },
+          {
+            "id": 6,
+            "roleType": "ROLE_PM"
+          },
+          {
+            "id": 5,
+            "roleType": "ROLE_RECRUITER"
+          },
+          {
+            "id": 11,
+            "roleType": "ROLE_SALES"
+          },
+          {
+            "id": 19,
+            "roleType": "ROLE_PROJECTS_VIEWER"
+          },
+          {
+            "id": 4,
+            "roleType": "ROLE_HR"
+          },
+          {
+            "id": 8,
+            "roleType": "ROLE_IMPLEMENTER_OFFICE"
+          }
+        ],
+        "activatedOnProject": null,
+        "activated": true,
+        "billable": null,
+        "avatar": "61a64fab920409c413d0f9d6a8d09ef6",
+        "department": "HR Department",
+        "startDate": null,
+        "endDate": null,
+        "teamMemberRates": null,
+        "enableEndDate": null,
+        "requiredStack": null,
+        "position": {
+          "positionType": "HR Manager",
+          "positionLevel": null
+        },
+        "stackList": [],
+        "fromUnknown": false
+      },
+      "hrManager": null,
+      "activated": true,
+      "team": null,
+      "createdAt": null,
+      "startDate": null,
+      "endDate": null,
+      "color": null,
+      "logo": null,
+      "base64Logo": null,
+      "shortName": null,
+      "projectTypeId": null,
+      "temporary": false,
+      "parentProjectFolder": null,
+      "technologies": null,
+      "client": null,
+      "description": null,
+      "accountDTO": null,
+      "teamLead": null,
+      "department": null,
+      "confluenceGroup": null,
+      "currentProjectTypeService": null,
+      "currentTypeOfAgreement": null,
+      "projectCountry": null,
+      "projectCurrency": null,
+      "ragStatus": null,
+      "accountOwner": null,
+      "documentLinks": null,
+      "projectCost": null,
+      "monthlyCosts": null,
+      "creationSource": null,
+      "projectAccount": null
+    }
+  ]
+}

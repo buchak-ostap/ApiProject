@@ -3,11 +3,18 @@ package com.apiProject.config;
 public interface ApplicationConstants {
 
     String SS_BASE_URL = "https://space.sombrainc.com/";
-    String LOGIN_ENDPOINT = "api/authentication";
-    String USER_PROFILE = "api/contacts/";
-    String CREATE_UPDATE_TIME_LOG = "api/timeLog";
-    String DELETE_TIME_LOG = "api/timeLog/";
-    String TIME_LOG_MONTH = "/api/timeLog/month";
+    String LOGIN_ENDPOINT_ENDPOINT = "api/authentication";
+    String USER_PROFILE_ENDPOINT = "api/contacts/";
+    String CREATE_UPDATE_TIME_LOG_ENDPOINT = "api/timeLog";
+    String DELETE_TIME_LOG_ENDPOINT = "api/timeLog/";
+    String TIME_LOG_MONTH_ENDPOINT = "/api/timeLog/month";
+    String PROJECT_FOLDER_ENDPOINT = "/api/project/folder";
+    String HOME_PAGE_INFO_ENDPOINT = "/api/account/home-page-info";
+
+    //JSON's paths
+    String CONTACT_PROFILE_USERS_PATH = "/testData/jsons/contactProfile/";
+    String TIME_LOG_PATH = "/testData/jsons/timeLog/";
+    String PROJECTS_PATH = "/testData/jsons/projects/";
 
     //Messages
     String TIME_LOG_SUCCESSFUL_DELETE_MESSAGE = "The time log was successfully deleted.";

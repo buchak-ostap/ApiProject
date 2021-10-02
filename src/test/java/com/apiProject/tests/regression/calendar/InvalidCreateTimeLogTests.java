@@ -1,4 +1,4 @@
-package com.apiProject.tests.calendar;
+package com.apiProject.tests.regression.calendar;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.CreateTimeLogDto;
@@ -14,12 +14,10 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
 public class InvalidCreateTimeLogTests extends BaseTest {
 
-    public static final String TIME_LOG_PATH = "/testData/jsons/timeLog/validCreateTimeLog.json";
-
     @Test
     public void createNewTimeLogWithoutTimeSpentTest() {
         //Get Time Log request body
-        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH);
+        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
         final CreateTimeLogDto requestBody = JacksonUtil.deserializeWithDate(requestBodyJson, CreateTimeLogDto.class);
 
         //Change Date Calendar to current date
@@ -39,7 +37,7 @@ public class InvalidCreateTimeLogTests extends BaseTest {
     @Test
     public void createNewTimeLogForNextDayTest() {
         //Get Time Log request body
-        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH);
+        final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
         final CreateTimeLogDto requestBody = JacksonUtil.deserializeWithDate(requestBodyJson, CreateTimeLogDto.class);
 
         //Change Date Calendar to next date

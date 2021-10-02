@@ -9,12 +9,12 @@ import static org.testng.Assert.*;
 public class CalendarVerifications {
 
     public static void verifyTimeLogExistsInCalendar(TimeLogListDto actual, CreateTimeLogDto expected) {
-        assertEquals(actual.getId(), expected.getId());
-        assertEquals(actual.getTimeSpent(), expected.getTimeSpent());
-        assertEquals(actual.getProjectId(), expected.getProjectId());
-        assertEquals(actual.getDescription(), expected.getDescription());
-        assertEquals(actual.getCreatedByEmail(), expected.getCreatedByEmail());
-        assertEquals(actual.getDateCalendar(), expected.getDateCalendar());
+        assertEquals(actual.getId(), expected.getId(), "ID value if different");
+        assertEquals(actual.getTimeSpent(), expected.getTimeSpent(), "Time Spent value is different");
+        assertEquals(actual.getProjectId(), expected.getProjectId(), "Project ID value is different");
+        assertEquals(actual.getDescription(), expected.getDescription(), "Description value is different");
+        assertEquals(actual.getCreatedByEmail(), expected.getCreatedByEmail(), "Created By Email value is different");
+        assertEquals(actual.getDateCalendar(), expected.getDateCalendar(), "Date Calendar value is different");
     }
 
     public static void verifyTimeLogCreation(CreateTimeLogDto actual, CreateTimeLogDto expected) {
@@ -26,11 +26,11 @@ public class CalendarVerifications {
     }
 
     public static void verifyErrorMessage(MessageDto actual, String message, Boolean status) {
-        assertEquals(actual.getMessage(), message);
+        assertEquals(actual.getMessage(), message, "Message is different");
         if (status.equals(true)) {
-            assertTrue(actual.getSuccess());
+            assertTrue(actual.getSuccess(), "Message should be successful");
         } else {
-            assertFalse(actual.getSuccess());
+            assertFalse(actual.getSuccess(), "Message should be unsuccessful");
         }
     }
 }

@@ -6,9 +6,8 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 
+import static com.apiProject.verifications.CalendarVerifications.verifyErrorMessage;
 import static org.springframework.http.HttpStatus.OK;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 public class BaseTest extends CRUD {
 
@@ -20,8 +19,8 @@ public class BaseTest extends CRUD {
     @Step
     public void deleteCreatedTimeLog(int timeLogId) {
         String timeLogDeleteMessageJson = deleteTimeLog(timeLogId, OK.value());
-        MessageDto timeLogDeleteMessage = JacksonUtil.deserialize(timeLogDeleteMessageJson, MessageDto.class);
-        assertEquals(timeLogDeleteMessage.getMessage(), TIME_LOG_SUCCESSFUL_DELETE_MESSAGE, "Message is different");
-        assertTrue(timeLogDeleteMessage.getSuccess());
+        MessageDto actual = JacksonUtil.deserialize(timeLogDeleteMessageJson, MessageDto.class);
+
+        verifyErrorMessage(actual, TIME_LOG_SUCCESSFUL_DELETE_MESSAGE, true);
     }
 }

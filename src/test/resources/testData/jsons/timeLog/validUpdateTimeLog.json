@@ -1,0 +1,16 @@
+{
+  "id": 138712,
+  "projectName": "My Advisor ",
+  "projectId": 205,
+  "description": "Edited description",
+  "createdByEmail": "ostap.buchak@sombrainc.com",
+  "timeSpent": 600,
+  "dateCreate": null,
+  "zoneOffset": 180,
+  "dateCalendar": "2021-10-02",
+  "timeLogType": "works at project",
+  "needApprove": false,
+  "hours": 10,
+  "minutes": 0,
+  "inSeconds": 36000
+}

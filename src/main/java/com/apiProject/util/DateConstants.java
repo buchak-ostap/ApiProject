@@ -22,4 +22,8 @@ public class DateConstants {
     public static LocalDate getLocalDate() {
         return LocalDate.now();
     }
+
+    public static LocalDate getNextDayDate() {
+        return LocalDate.now().plusDays(1);
+    }
 }

@@ -1,13 +1,14 @@
-package com.apiProject.tests.Calendar;
+package com.apiProject.verifications;
 
 import com.apiProject.model.timeLog.CreateTimeLogDto;
+import com.apiProject.model.timeLog.MessageDto;
 import com.apiProject.model.timeLog.TimeLogListDto;
 
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.*;
 
 public class CalendarVerifications {
 
-    public static void veryfyTimeLogExistsInCalendar(TimeLogListDto actual, CreateTimeLogDto expected) {
+    public static void verifyTimeLogExistsInCalendar(TimeLogListDto actual, CreateTimeLogDto expected) {
         assertEquals(actual.getId(), expected.getId());
         assertEquals(actual.getTimeSpent(), expected.getTimeSpent());
         assertEquals(actual.getProjectId(), expected.getProjectId());
@@ -22,5 +23,14 @@ public class CalendarVerifications {
         assertEquals(actual.getDescription(), expected.getDescription(), "Description is different");
         assertEquals(actual.getDateCalendar(), expected.getDateCalendar(), "Date Calendar is different");
         assertEquals(actual.getCreatedByEmail(), expected.getCreatedByEmail(), "Created by email is different");
+    }
+
+    public static void verifyErrorMessage(MessageDto actual, String message, Boolean status) {
+        assertEquals(actual.getMessage(), message);
+        if (status.equals(true)) {
+            assertTrue(actual.getSuccess());
+        } else {
+            assertFalse(actual.getSuccess());
+        }
     }
 }

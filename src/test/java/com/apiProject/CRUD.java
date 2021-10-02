@@ -47,7 +47,22 @@ public class CRUD implements ApplicationConstants {
                 .and()
                 .body(requestBody)
                 .when()
-                .post(CREATE_TIME_LOG)
+                .post(CREATE_UPDATE_TIME_LOG)
+                .then()
+                .extract().response();
+        assertEquals(response.getStatusCode(), statusCode);
+        return response.body().asString();
+    }
+
+    @Step
+    public String updateTimeLog(Object requestBody, int statusCode) {
+        Response response = given()
+                .header(COOKIE, getSessionToken(OSTAP_EMAIL, OSTAP_PASSWORD))
+                .contentType(ContentType.JSON)
+                .and()
+                .body(requestBody)
+                .when()
+                .put(CREATE_UPDATE_TIME_LOG)
                 .then()
                 .extract().response();
         assertEquals(response.getStatusCode(), statusCode);

@@ -7,6 +7,7 @@ import com.apiProject.model.timeLog.TimeLogListDto;
 import com.apiProject.model.timeLog.TimeLogMonth;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -20,6 +21,7 @@ import static org.springframework.http.HttpStatus.OK;
 public class GetTimeLogFromCalendarTests extends BaseTest {
 
     @Test
+    @Description("Get all Time Logs existed in Calendar and verify if created Time Log exists there")
     public void getTimeLogFromCalendarTest() {
         //Get request body to create Time Log
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");

@@ -5,6 +5,7 @@ import com.apiProject.model.timeLog.CreateTimeLogDto;
 import com.apiProject.model.timeLog.MessageDto;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import static com.apiProject.verifications.CalendarVerifications.verifyErrorMessage;
@@ -15,6 +16,7 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 public class InvalidCreateTimeLogTests extends BaseTest {
 
     @Test
+    @Description("Verify if user can't create Time Log with 0 hours")
     public void createNewTimeLogWithoutTimeSpentTest() {
         //Get Time Log request body
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
@@ -35,6 +37,7 @@ public class InvalidCreateTimeLogTests extends BaseTest {
     }
 
     @Test
+    @Description("Verify if user can't create Time Log for the next day")
     public void createNewTimeLogForNextDayTest() {
         //Get Time Log request body
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
@@ -46,6 +49,6 @@ public class InvalidCreateTimeLogTests extends BaseTest {
         //Create Time Log
         String response = createTimeLog(requestBody, BAD_REQUEST.value());
         MessageDto actual = JacksonUtil.deserialize(response, MessageDto.class);
-        verifyErrorMessage(actual, ERROR_FUTURE_DATE_TIME_LOG_CREATE, false);
+        verifyErrorMessage(actual, ERROR_FUTURE_DATE_TIME_LOG_CREATE + getNextDayDate(), false);
     }
 }

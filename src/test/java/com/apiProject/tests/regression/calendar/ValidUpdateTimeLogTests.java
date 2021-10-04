@@ -4,6 +4,7 @@ import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.CreateTimeLogDto;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import static com.apiProject.verifications.CalendarVerifications.verifyTimeLogCreation;
@@ -14,6 +15,7 @@ import static org.springframework.http.HttpStatus.OK;
 public class ValidUpdateTimeLogTests extends BaseTest {
 
     @Test
+    @Description("Verify if user can update existed Time Log with valid data")
     public void validUpdateTimeLogTest() {
         //Get Time Log request body
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");
@@ -30,6 +32,7 @@ public class ValidUpdateTimeLogTests extends BaseTest {
         final String updateRequestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validUpdateTimeLog.json");
         final CreateTimeLogDto updateRequestBody = JacksonUtil.deserializeWithDate(updateRequestBodyJson, CreateTimeLogDto.class);
         updateRequestBody.setId(actual.getId());
+        updateRequestBody.setDateCalendar(getLocalDate());
 
         String updatedTimeLogResponse = updateTimeLog(updateRequestBody, OK.value());
         CreateTimeLogDto expected = JacksonUtil.deserializeWithDate(updatedTimeLogResponse, CreateTimeLogDto.class);

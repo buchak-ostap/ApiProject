@@ -20,7 +20,7 @@ public interface ApplicationConstants {
     String TIME_LOG_SUCCESSFUL_DELETE_MESSAGE = "The time log was successfully deleted.";
     String ERROR_EMPTY_DESCRIPTION = "You can't create a time log without description.";
     String ERROR_EMPTY_TIME_SPENT = "Time spent can't be a null";
-    String ERROR_FUTURE_DATE_TIME_LOG_CREATE = "You cannot create time log on a future date 2021-10-03";
+    String ERROR_FUTURE_DATE_TIME_LOG_CREATE = "You cannot create time log on a future date ";
 
     //Login constants
     String J_USERNAME = "j_username";

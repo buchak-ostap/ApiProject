@@ -10,5 +10,8 @@
         <module name="ApiProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiProject" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

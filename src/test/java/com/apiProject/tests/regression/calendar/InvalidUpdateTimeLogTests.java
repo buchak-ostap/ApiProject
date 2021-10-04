@@ -5,6 +5,7 @@ import com.apiProject.model.timeLog.CreateTimeLogDto;
 import com.apiProject.model.timeLog.MessageDto;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import static com.apiProject.verifications.CalendarVerifications.verifyErrorMessage;
@@ -14,6 +15,7 @@ import static org.springframework.http.HttpStatus.*;
 public class InvalidUpdateTimeLogTests extends BaseTest {
 
     @Test
+    @Description("Verify if user can't create Time Log without description")
     public void updateTimeLogWithoutDescriptionTest() {
         //Get Time Log request body
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");

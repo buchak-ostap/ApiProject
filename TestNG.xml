@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SS" verbose="2">
+
+    <test name="smoke">
+        <classes>
+            <class name="com.apiProject.tests.smoke.SsSmokeTests"/>
+        </classes>
+    </test>
+
+    <test name="functional">
+        <classes>
+            <class name="com.apiProject.tests.regression.calendar.GetTimeLogFromCalendarTests"/>
+            <class name="com.apiProject.tests.regression.calendar.InvalidCreateTimeLogTests"/>
+            <class name="com.apiProject.tests.regression.calendar.InvalidUpdateTimeLogTests"/>
+            <class name="com.apiProject.tests.regression.calendar.TimeLogCreateTests"/>
+            <class name="com.apiProject.tests.regression.calendar.TimeLogMonthTests"/>
+            <class name="com.apiProject.tests.regression.calendar.ValidUpdateTimeLogTests"/>
+            <class name="com.apiProject.tests.regression.profile.ContactProfileTests"/>
+            <class name="com.apiProject.tests.regression.projects.GetProjectFolderTests"/>
+        </classes>
+    </test>
+</suite>

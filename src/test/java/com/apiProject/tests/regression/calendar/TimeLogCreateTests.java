@@ -4,6 +4,7 @@ import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.*;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 import static com.apiProject.verifications.CalendarVerifications.verifyTimeLogCreation;
@@ -13,6 +14,7 @@ import static org.springframework.http.HttpStatus.*;
 public class TimeLogCreateTests extends BaseTest {
 
     @Test
+    @Description("Verify if user can create Time Log with all valid data")
     public void createNewTimeLogTest() {
         //Get Time Log request body
         final String requestBodyJson = FileUtils.getTextFromResourceFile(TIME_LOG_PATH + "validCreateTimeLog.json");

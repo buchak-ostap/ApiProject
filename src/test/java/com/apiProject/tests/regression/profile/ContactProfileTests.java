@@ -4,6 +4,7 @@ import com.apiProject.BaseTest;
 import com.apiProject.model.contacts.ProfileDto;
 import com.apiProject.util.FileUtils;
 import com.apiProject.util.json.JacksonUtil;
+import io.qameta.allure.Description;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,7 @@ public class ContactProfileTests extends BaseTest {
     }
 
     @Test(dataProvider = "contactProfileId")
+    @Description("Verify if user can get Profile Page info")
     public void getProfilePage(int id, String expectedJson) {
         final String name = FileUtils.getTextFromResourceFile(CONTACT_PROFILE_USERS_PATH + expectedJson);
         ProfileDto expected = JacksonUtil.deserialize(name, ProfileDto.class);

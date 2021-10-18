@@ -1,4 +1,4 @@
-package com.apiProject.tests.regression.profile;
+package com.apiProject.tests.functional.profile;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.contacts.ProfileDto;

@@ -1,4 +1,4 @@
-package com.apiProject.tests.regression.calendar;
+package com.apiProject.tests.functional.calendar;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.timeLog.CreateTimeLogDto;

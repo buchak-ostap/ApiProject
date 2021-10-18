@@ -11,14 +11,14 @@
 
     <test name="functional">
         <classes>
-            <class name="com.apiProject.tests.regression.calendar.GetTimeLogFromCalendarTests"/>
-            <class name="com.apiProject.tests.regression.calendar.InvalidCreateTimeLogTests"/>
-            <class name="com.apiProject.tests.regression.calendar.InvalidUpdateTimeLogTests"/>
-            <class name="com.apiProject.tests.regression.calendar.TimeLogCreateTests"/>
-            <class name="com.apiProject.tests.regression.calendar.TimeLogMonthTests"/>
-            <class name="com.apiProject.tests.regression.calendar.ValidUpdateTimeLogTests"/>
-            <class name="com.apiProject.tests.regression.profile.ContactProfileTests"/>
-            <class name="com.apiProject.tests.regression.projects.GetProjectFolderTests"/>
+            <class name="com.apiProject.tests.functional.calendar.GetTimeLogFromCalendarTests"/>
+            <class name="com.apiProject.tests.functional.calendar.InvalidCreateTimeLogTests"/>
+            <class name="com.apiProject.tests.functional.calendar.InvalidUpdateTimeLogTests"/>
+            <class name="com.apiProject.tests.functional.calendar.TimeLogCreateTests"/>
+            <class name="com.apiProject.tests.functional.calendar.TimeLogMonthTests"/>
+            <class name="com.apiProject.tests.functional.calendar.ValidUpdateTimeLogTests"/>
+            <class name="com.apiProject.tests.functional.profile.ContactProfileTests"/>
+            <class name="com.apiProject.tests.functional.projects.GetProjectFolderTests"/>
         </classes>
     </test>
 </suite>

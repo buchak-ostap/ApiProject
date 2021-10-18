@@ -1,4 +1,4 @@
-package com.apiProject.tests.regression.projects;
+package com.apiProject.tests.functional.projects;
 
 import com.apiProject.BaseTest;
 import com.apiProject.model.projects.ProjectFolderDto;

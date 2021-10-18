@@ -25,7 +25,11 @@ public class CalendarVerifications {
         assertEquals(actual.getCreatedByEmail(), expected.getCreatedByEmail(), "Created by email is different");
     }
 
-    public static void verifyErrorMessage(MessageDto actual, String message, Boolean status) {
+    public static void verifyErrorMessage(MessageDto actual, String message) {
+        assertEquals(actual.getMessage(), message, "Message is different");
+    }
+
+    public static void verifySuccessMessage(MessageDto actual, String message, Boolean status) {
         assertEquals(actual.getMessage(), message, "Message is different");
         if (status.equals(true)) {
             assertTrue(actual.getSuccess(), "Message should be successful");

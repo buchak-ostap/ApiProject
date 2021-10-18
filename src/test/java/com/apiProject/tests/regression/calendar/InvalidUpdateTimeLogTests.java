@@ -40,7 +40,7 @@ public class InvalidUpdateTimeLogTests extends BaseTest {
 
         //Verify error message and delete Time Log
         try {
-            verifyErrorMessage(actual, ERROR_EMPTY_DESCRIPTION, false);
+            verifyErrorMessage(actual, ERROR_EMPTY_DESCRIPTION);
         } finally {
             deleteCreatedTimeLog(timeLogResponse.getId());
         }

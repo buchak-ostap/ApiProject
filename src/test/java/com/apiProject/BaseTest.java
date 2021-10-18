@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 
-import static com.apiProject.verifications.CalendarVerifications.verifyErrorMessage;
+import static com.apiProject.verifications.CalendarVerifications.verifySuccessMessage;
 import static org.springframework.http.HttpStatus.OK;
 
 public class BaseTest extends CRUD {
@@ -21,6 +21,6 @@ public class BaseTest extends CRUD {
         String timeLogDeleteMessageJson = deleteTimeLog(timeLogId, OK.value());
         MessageDto actual = JacksonUtil.deserialize(timeLogDeleteMessageJson, MessageDto.class);
 
-        verifyErrorMessage(actual, TIME_LOG_SUCCESSFUL_DELETE_MESSAGE, true);
+        verifySuccessMessage(actual, TIME_LOG_SUCCESSFUL_DELETE_MESSAGE, true);
     }
 }

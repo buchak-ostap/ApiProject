@@ -33,7 +33,7 @@ public class InvalidCreateTimeLogTests extends BaseTest {
         //Create Time Log
         String response = createTimeLog(requestBody, BAD_REQUEST.value());
         MessageDto actual = JacksonUtil.deserialize(response, MessageDto.class);
-        verifyErrorMessage(actual, ERROR_EMPTY_TIME_SPENT, false);
+        verifyErrorMessage(actual, ERROR_EMPTY_TIME_SPENT);
     }
 
     @Test
@@ -49,6 +49,6 @@ public class InvalidCreateTimeLogTests extends BaseTest {
         //Create Time Log
         String response = createTimeLog(requestBody, BAD_REQUEST.value());
         MessageDto actual = JacksonUtil.deserialize(response, MessageDto.class);
-        verifyErrorMessage(actual, ERROR_FUTURE_DATE_TIME_LOG_CREATE + getNextDayDate(), false);
+        verifyErrorMessage(actual, ERROR_FUTURE_DATE_TIME_LOG_CREATE + getNextDayDate());
     }
 }
